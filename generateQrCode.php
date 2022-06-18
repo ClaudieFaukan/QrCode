@@ -12,4 +12,4 @@ $name = $_POST["name"];
 $pathFile = "./upload/" . $name . ".png";
 $qrcode = new QrCode($url);
 
-$qrcode->saveToFile($pathFile);
+$qrcode->writeFile($pathFile);
